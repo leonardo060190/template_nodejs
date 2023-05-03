@@ -5,7 +5,7 @@ const port = 3000
 //aplicação pelo método get vai buscar a rota
 //localhost:3000/
 app.get('/', (req, res) => {
-  res.send('Leonardo Domingos Patricio!')
+  res.send('Leonardo Domingos!')
 })
 
 //exemplo relacionado a filmes
