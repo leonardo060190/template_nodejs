@@ -2,6 +2,15 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+//Arquivo com rotas para o cadastro de livros
+const livros = require('./routes/livros');
+
+//identificação da rota e da const (require) associada
+app.use('/livros',livros);
+//a rota /livros retorna a lista dos livros cadastrados em formato json
+
+
+
 //aplicação pelo método get vai buscar a rota
 //localhost:3000/
 app.get('/', (req, res) => {
