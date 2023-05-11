@@ -10,7 +10,6 @@ app.use('/livros',livros);
 //a rota /livros retorna a lista dos livros cadastrados em formato json
 
 
-
 //aplicação pelo método get vai buscar a rota
 //localhost:3000/
 app.get('/', (req, res) => {
