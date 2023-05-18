@@ -3,7 +3,7 @@
  * @returns { Promise<void> }
  */
 exports.up = function(knex) {
-  return knex.schema.createTable('livros', (table)=>{
+  return knex.schema.createTable('livros', (table)=> {
     table.increments();
     table.string("titulo",80).notNullable();
     table.string("autor",60).notNullable();
@@ -12,11 +12,6 @@ exports.up = function(knex) {
     table.string("foto",100).notNullable();
   });
 };
-
-/**
- * @param { import("knex").Knex } knex
- * @returns { Promise<void> }
- */
 exports.down = function(knex) {
   return knex.schema.dropTable("livros");
 };
